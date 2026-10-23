@@ -54,8 +54,10 @@ FileTagger stores tags in a lightweight JSON sidecar (`~/file_tags.json`) — no
 ## 🚀 Installation
 
 ```bash
-pip install filetagger-cli
+pip install "git+https://github.com/DavidTbilisi/FileTagger.git"
 ```
+
+Not yet published on PyPI, so pip installs straight from GitHub.
 
 Commands are available as both `ftag` (short) and `filetagger` (long form).
 
@@ -64,7 +66,7 @@ Commands are available as both `ftag` (short) and `filetagger` (long form).
 Watch mode requires [watchdog](https://pypi.org/project/watchdog/):
 
 ```bash
-pip install filetagger-cli[watch]
+pip install "filetagger-cli[watch] @ git+https://github.com/DavidTbilisi/FileTagger.git"
 # or separately
 pip install watchdog
 ```
@@ -82,7 +84,7 @@ pip install -e .
 To expose FileTagger to **Cursor**, **Claude Desktop**, **ChatGPT** (where local stdio is supported), **OpenAI Codex**, or any MCP client over stdio, install the optional SDK:
 
 ```bash
-pip install "filetagger-cli[mcp]"
+pip install "filetagger-cli[mcp] @ git+https://github.com/DavidTbilisi/FileTagger.git"
 # or, from a clone:
 pip install -e ".[mcp]"
 ```
@@ -194,7 +196,7 @@ args = ["-m", "filetagger.mcp_stdio"]
 PYTHONPATH = "/absolute/path/to/FileTagger"
 ```
 
-Use the same Python you used for `pip install "filetagger-cli[mcp]"`. Then use Codex’s MCP UI or `codex mcp` to verify the server starts.
+Use the same Python you used to install `filetagger-cli[mcp]`. Then use Codex’s MCP UI or `codex mcp` to verify the server starts.
 
 Further reading: [Cursor MCP](https://cursor.com/docs/mcp), [Connecting local MCP servers (Claude Desktop)](https://modelcontextprotocol.io/docs/develop/connect-local-servers), [OpenAI Codex MCP](https://developers.openai.com/codex/mcp).
 
