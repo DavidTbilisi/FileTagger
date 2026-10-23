@@ -6,7 +6,6 @@
 
 _Transform chaos into order with intelligent file organization_
 
-[![PyPI](https://img.shields.io/pypi/v/filetagger-cli.svg)](https://pypi.org/project/filetagger-cli/)
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](README.md)
